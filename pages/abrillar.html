@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap" rel="stylesheet">
+    <!--Link a Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--Link CSS-->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -15,41 +17,66 @@
 
 <body>
     <header>
-        <nav>
-            <ul>   
-                <il><a href="mepresento.html"class="navLink"> Me presento!</a></il>
-                <il><a href="abrillar.html"class="navLink"> A brillar mi amor</a></il>
-                <il><a href="servicios.html"class="navLink"> Servicios</a></il>
-                <il><a href="contacto.html"class="navLink"> Contacto</a></il>
-            </ul>   
-        </nav>
-        <a href="../index.html"><img src="../images/Logos/Gabriela Vivas.png" alt="GabyLogo"></img></a>    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="mepresento.html">Me Presento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="abrillar.html">A Brilla Mi amor!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+        <a href="../index.html"><img src="../images/Logos/Gabriela Vivas.png" alt="GabyLogo"></img></a>   
     </header>
 
     <main>
-        <section class="aBrillar">
-            <h1> A brillar mi amor! Podcast</h1>
-            <img src="../images/flyer 1.jpg" alt="A brillar mi amor">
-            <div class="aBrillarLeft">
-                <h2>Episodios:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Soluta non provident culpa totam. Distinctio nihil corrupti non placeat 
-                quis et eveniet asperiores dolores facere totam! Tempore ad quaerat tempora, perferendis 
-                id facilis harum veniam. Magnam eveniet maxime, vitae deserunt quasi, tenetur praesentium optio 
-                aliquid cum dolores blanditiis. Modi, nihil explicabo!</p>
+        <div class="grilla_abrillar container-fluid">
+            <div class="row text-center">
+                <h1> A brillar mi amor! Podcast</h1>
+                <div class="aBrillarLeft col-sm-12 col-md-6 col-lg-3">
+                    <h2>Esto es para ti!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta non provident culpa totam. Distinctio nihil corrupti non placeat quis et eveniet asperiores dolores facere totam! Tempore ad quaerat tempora, perferendis id facilis harum veniam. Magnam eveniet maxime, vitae deserunt quasi, tenetur praesentium optio aliquid cum dolores blanditiis. Modi, nihil explicabo!</p>
+                </div>
+                <div class="aBrillarImg col-sm-12 col-md-6 col-lg-6 order-1">
+                    <img src="../images/abrillar.png" class="img-fluid" alt="A brillar mi amor"> 
+                </div>
+                <div class="spotify col-sm-12 col-md-6 offset-md-3 col-lg-3 offset-lg-0 order-2">
+                    <h2>Episodios:</h2>
+                    <iframe  src="https://open.spotify.com/embed/episode/6yHneqlMC2JmMA3bIanYdc?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe  src="https://open.spotify.com/embed/episode/2ajHyrr5gNxlEGfPJ7jVmE?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe  src="https://open.spotify.com/embed/episode/0kC2rTQPBdMBp6cBKCk6e7?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
             </div>
-            <div class="spotify">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6yHneqlMC2JmMA3bIanYdc?utm_source=generator" width="40%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2ajHyrr5gNxlEGfPJ7jVmE?utm_source=generator" width="40%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="row align-items-center justify-content-center bg-abrillarB">
+                <div class="aBrillarGabyImg col-sm-12 col-md-6 col-lg-6 order-1">
+                    <img src="../images/GabyMic.jpg" class="img-fluid" alt="Gaby Podcast">
+                </div>
+                <div class="aBrillarBottom col-sm-12 col-md-6 col-lg-6">
+                    <p> <b>Conviertete en un shinning member!</b><br> Unete a nuestra comunidad en WhatSapp <br> <a href="#">Unirme</a> </p>
+                </div>
             </div>
-            <div class="aBrillarRight">
-                <p> Unete a nuestra comunidad en WhatSapp <br> <a href="#">Unirme</a> </p>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer>
         <p> Soy Gabriela Vivas, todos los derechos reservados, 2023</p>
     </footer>
+
+    <!--Script Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap" rel="stylesheet">
+    <!--Link a Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--Link CSS-->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -15,20 +17,34 @@
 
 <body>
     <header>
-        <nav>
-            <ul>   
-                <il><a href="mepresento.html"class="navLink"> Me presento!</a></il>
-                <il><a href="abrillar.html"class="navLink"> A brillar mi amor</a></il>
-                <il><a href="servicios.html"class="navLink"> Servicios</a></il>
-                <il><a href="contacto.html"class="navLink"> Contacto</a></il>
-            </ul>   
-        </nav>
-        <a href="../index.html"><img src="../images/Logos/Gabriela Vivas.png" alt="GabyLogo"></img></a>    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="mepresento.html">Me Presento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="abrillar.html">A Brilla Mi amor!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+        <a href="../index.html"><img src="../images/Logos/Gabriela Vivas.png" alt="GabyLogo"></img></a>   
     </header>
     <main>
-        <section class="contacto">
+        <section class="grilla_contacto">
             <h1> Conectemos!</h1>
-            <div class="sides">
                 <form action="#" method="GET" class="formulario">
                         <label for="nombre">Nombre:</label>
                         <input type="text"placeholder="Tu nombre" name="nombre">
@@ -41,21 +57,24 @@
                         <input type="number"placeholder="Tu edad" name="edad">
                         <br> <br>
                         <label for="texto">Dejame saber tu consulta:</label>
-                        <textarea name="texto" id="" cols="55" rows="10" placeholder="Escribe tu mensaje."></textarea>
+                        <textarea name="texto" id="" cols="55" rows="9" placeholder="Escribe tu mensaje."></textarea>
                     <button type="submit">Enviar</button>
                 </form>
                 <div class="redes">
                     <h2>Redes Sociales:</h2>
-                    <a href="http://www.linkedin.com/in/gabrielavivas" target="_blank"><img src="../images/Logos/linkedin.png" alt="LinkedIn" class="icono"></a> <br>
-                    <a href="https://www.instagram.com/soygabrielavivas/" target="_blank"><img src="../images/Logos/instagram.png" alt="Instagram" class="icono"></a> <br>
-                    <a href="https://www.tiktok.com/@soygabrielavivas" target="_blank"><img src="../images/Logos/tik-tok.png" alt="TikTok" class="icono"></a> <br>
+                    <a href="http://www.linkedin.com/in/gabrielavivas" target="_blank"><img src="../images/Logos/linkedin.png" alt="LinkedIn" class="icono"></a>
+                    <a href="https://www.instagram.com/soygabrielavivas/" target="_blank"><img src="../images/Logos/instagram.png" alt="Instagram" class="icono"></a>
+                    <a href="https://www.tiktok.com/@soygabrielavivas" target="_blank"><img src="../images/Logos/tik-tok.png" alt="TikTok" class="icono"></a>
                 </div>
-            </div>
         </section>
     </main>
 
     <footer>
         <p> Soy Gabriela Vivas, todos los derechos reservados, 2023</p>
     </footer>
+
+    <!--Script Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </body>
 </html>

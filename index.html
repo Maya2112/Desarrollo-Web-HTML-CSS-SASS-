@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap" rel="stylesheet">
+    <!--Link a Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--Link CSS-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -15,34 +17,46 @@
 
 <body>
     <header>
-        <nav>
-            <ul>   
-                <il><a href="pages/mepresento.html"class="navLink"> Me presento!</a></il>
-                <il><a href="pages/abrillar.html"class="navLink"> A brillar mi amor</a></il>
-                <il><a href="pages/servicios.html"class="navLink"> Servicios</a></il>
-                <il><a href="pages/contacto.html"class="navLink"> Contacto</a></il>
-            </ul>   
-        </nav>
-        <a href="index.html"><img src="images/Logos/Gabriela Vivas.png" alt="GabyLogo"></img></a> 
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="pages/mepresento.html">Me Presento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="pages/abrillar.html">A Brilla Mi amor!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+        <a href="index.html"><img src="images/Logos/Gabriela Vivas.png" alt="GabyLogo"></img></a>   
     </header>
 
     <main>
-        <!--Seccion de arriba-->
-        <section class="indexSec">
+        <section class="grilla_index">
             <h1> Soy Gabriela Vivas</h1>
-            <div class="indexUp">
-                <img src="images/ex1.jpg" alt="Gaby">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt sit incidunt laboriosam aliquid iure.</p> 
+            <!--Seccion de arriba-->
+            <div class="indexUp c1Index">
+                    <img src="images/GabyProfile.jpg" alt="Gaby">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt sit incidunt laboriosam aliquid iure.</p>    
             </div>
-        </section>
-        
-        <!--Seccion abajo-->
-        <section class="secMarcas">
-            <h2> He trabajado con:</h2>
-            <div>
-                <img src="images/Logos/logoSenpai.png" alt="Senpai Academy" class="logos">
-                <img src="images/Logos/Beinst.png" alt="Beinst" class="logos">
-                <img src="images/Logos/MujeresLogo.png" alt="Mujeres Emprendedoras" class="logos">
+            <!--Seccion abajo-->
+            <div class="secMarcas c2Index">
+                <h2> He trabajado con:</h2>
+                <img src="images/Logos/logoBeinst.png" alt="Senpai Academy" class="logos">
+                <img src="images/Logos/logoSenpai.png" alt="Beinst" class="logos">
+                <img src="images/Logos/logoMujeres.png" alt="Mujeres Emprendedoras" class="logos">
             </div>
         </section>
     </main>
@@ -51,5 +65,7 @@
         <p> Soy Gabriela Vivas, todos los derechos reservados, 2023</p>
     </footer>
     
+    <!--Script Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
