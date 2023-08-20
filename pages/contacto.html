@@ -43,30 +43,38 @@
         <a href="../index.html"><img src="../images/Logos/Gabriela Vivas.png" alt="GabyLogo"></img></a>   
     </header>
     <main>
-        <section class="grilla_contacto">
+        <div class="grilla_contacto container-fluid">
             <h1> Conectemos!</h1>
-                <form action="#" method="GET" class="formulario">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text"placeholder="Tu nombre" name="nombre">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text"placeholder="Tu apellido" name="apellido">
-                        <br> <br>
-                        <label for="email">Email:</label>
-                        <input type="email"placeholder="Tu correo" name="email">
-                        <label for="edad">Edad:</label>
-                        <input type="number"placeholder="Tu edad" name="edad">
-                        <br> <br>
-                        <label for="texto">Dejame saber tu consulta:</label>
-                        <textarea name="texto" id="" cols="55" rows="9" placeholder="Escribe tu mensaje."></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-                <div class="redes">
+            <div class="row">
+                <div class="col-sm-12 col-md-7 col-lg-6 order-1">
+                    <form action="#" method="GET" class="formulario">
+                        <div class="mb-2">
+                            <label for="Nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" name="Nombre" placeholder="Tu nombre">
+                            <label for="Apellido" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" name="Apellido" placeholder="Tu apellido">
+                        </div>
+                        <div class="mb-2">
+                            <label for="Email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" name="Email" placeholder="Tu email">
+                            <label for="Edad" class="form-label">Edad:</label>
+                            <input type="number" class="form-control" name="Edad" placeholder="Tu edad">
+                        </div>
+                        <div class="mb-2">
+                            <label for="texto" class="form-label">Dejame saber tu consulta:</label>
+                            <textarea class="form-control" name="texto" cols="50" rows="9">Escribe aqui</textarea>
+                        </div>
+                        <button type="button" class="btn btn-info">Enviar</button>
+                    </form>
+                </div>
+                <div class="redes col-sm-12 col-md-5 col-lg-6">
                     <h2>Redes Sociales:</h2>
                     <a href="http://www.linkedin.com/in/gabrielavivas" target="_blank"><img src="../images/Logos/linkedin.png" alt="LinkedIn" class="icono"></a>
                     <a href="https://www.instagram.com/soygabrielavivas/" target="_blank"><img src="../images/Logos/instagram.png" alt="Instagram" class="icono"></a>
                     <a href="https://www.tiktok.com/@soygabrielavivas" target="_blank"><img src="../images/Logos/tik-tok.png" alt="TikTok" class="icono"></a>
                 </div>
-        </section>
+            </div>
+        </div>
     </main>
 
     <footer>

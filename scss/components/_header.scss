@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #f57335;
+    padding: 7px;
+    position: relative;
+
+    img{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+        position: absolute;
+        top: 10%;
+
+        &:hover{
+            width: 66px;
+            height: 66px;
+            object-fit: cover;
+        }
+    }
+}
+
