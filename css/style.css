@@ -341,6 +341,7 @@ footer {
 }
 .grupales .card:hover {
   background-color: #838df0;
+  transform: scale(1.1);
 }
 
 .unoAuno {
@@ -358,6 +359,7 @@ footer {
 }
 .unoAuno .card:hover {
   background-color: #00964f;
+  transform: scale(1.1);
 }
 
 .asesoria {
@@ -372,9 +374,11 @@ footer {
   object-fit: cover;
   border-radius: 10px;
   padding: 5px;
+  transition: 0.5s;
 }
 .asesoria .card:hover {
   background-color: #f57335;
+  transform: scale(1.1);
 }
 
 /*Link en los servicios*/
