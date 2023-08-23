@@ -1,3 +1,4 @@
+/*  Color: */
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap");
 * {
   margin: 0;
@@ -10,8 +11,40 @@
   margin: 0;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 main {
-  background-color: #ffd2ef;
+  background-color: #FFd2EF;
+}
+
+h1 {
+  padding: 15px;
+  font-size: 60px;
+  font-weight: 400;
+  text-shadow: #838df0 1px 0 10px;
+}
+
+.serv, .asesoria, .unoAuno, .grupales {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.serv-card, .asesoria .card, .unoAuno .card, .grupales .card {
+  width: 300px;
+  height: 500px;
+  background-color: #e9a281;
+  transition: 0.5s;
+}
+
+.serv-img, .asesoria .card img, .unoAuno .card img, .grupales .card img {
+  align-self: center;
+  height: 275px;
+  width: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 header {
@@ -48,7 +81,7 @@ nav .navText {
   transition: 0.5s;
 }
 nav .navText:hover {
-  box-shadow: 2px 2px 2px 2px #ffd2ef;
+  box-shadow: 2px 2px 2px 2px #FFd2EF;
   border-radius: 4px;
   font-size: 18px;
   color: white;
@@ -60,24 +93,17 @@ footer {
   padding: 30px;
 }
 
-.grilla_index {
-  background-color: #ffd2ef;
-}
-.grilla_index h1 {
-  justify-content: center;
-  font-size: 60px;
-  font-weight: 400;
-  text-shadow: #838df0 1px 0 10px;
-}
-
 /*Index seccion arriba*/
 .indexUp {
   display: flex;
-  height: 100%;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 0;
+  height: 100%;
   background-color: #ecbddc;
-  margin-bottom: 10px;
+  padding: 15px;
+  margin-bottom: 45px;
 }
 .indexUp .indexUpText p {
   font-size: 40px;
@@ -96,24 +122,28 @@ footer {
 /*Index seccion abajo*/
 .secMarcas {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   height: 75%;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  padding: 15px;
   background-color: #00964f;
-  margin-bottom: 10px;
 }
 .secMarcas h2 {
   font-size: 40px;
   font-weight: 400;
-  color: #ffd2ef;
+  color: #FFd2EF;
   text-shadow: #838df0 1px 0 10px;
 }
 .secMarcas .logos {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  margin-bottom: 15px;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 10px;
 }
 .secMarcas .logos img {
   width: 250px;
@@ -129,23 +159,14 @@ footer {
   filter: grayscale(0);
 }
 
-.grilla_mepre h1 {
+.meUp, .meDown {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  font-weight: 400;
-  padding: 5px;
-  text-shadow: #838df0 1px 0 10px;
-}
-
-.meUp {
-  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   gap: 10px;
 }
-.meUp p {
+.meUp p, .meDown p {
   font-size: 20px;
   font-weight: 300;
   text-align: justify;
@@ -153,11 +174,6 @@ footer {
   align-items: center;
 }
 
-.meUpImg {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 .meUpImg img {
   height: 95%;
   width: 95%;
@@ -165,35 +181,13 @@ footer {
   border-radius: 15px;
 }
 
-.meDownTitle h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.meDownTitle h2, .carousel h2 {
   padding: 30px;
   border: #838df0 5px solid;
   font-size: 55px;
   font-weight: 400;
 }
 
-.meDown {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
-}
-.meDown p {
-  font-size: 20px;
-  font-weight: 300;
-  text-align: justify;
-  align-items: flex-end;
-}
-
-.meDownImg {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
-}
 .meDownImg img {
   height: 100%;
   width: 95%;
@@ -201,39 +195,17 @@ footer {
 }
 
 .carousel {
-  margin: 50px;
-}
-.carousel h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  border: #838df0 5px solid;
-  font-size: 55px;
-  font-weight: 400;
-}
-
-.grilla_abrillar h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  font-weight: 400;
-  margin-top: 10px;
-  padding: 5px;
-  text-shadow: #838df0 1px 0 10px;
+  margin: 25px;
 }
 
 .aBrillarLeft {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .aBrillarLeft h2 {
-  text-align: left;
   font-size: 40px;
   font-weight: 300;
 }
@@ -243,18 +215,16 @@ footer {
   text-align: center;
 }
 
-.aBrillarImg {
-  justify-content: center;
-  align-items: center;
-}
 .aBrillarImg img {
+  width: 100%;
+  height: 95%;
   object-fit: cover;
 }
 
 .spotify {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   margin-top: 10px;
@@ -263,7 +233,7 @@ footer {
   padding: 10px;
   border: #00964f 5px solid;
   border-radius: 5px;
-  background-color: #dd7d50;
+  background-color: #f57335;
   text-align: center;
   font-size: 35px;
   font-weight: 400;
@@ -277,9 +247,10 @@ footer {
 
 .aBrillarBottom {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 10px;
-  justify-content: center;
 }
 .aBrillarBottom p {
   background-color: #959cd4;
@@ -287,7 +258,7 @@ footer {
   font-size: 30px;
   font-weight: 400;
   text-align: center;
-  padding: 90px;
+  padding: 75px;
 }
 .aBrillarBottom p a {
   font-weight: bold;
@@ -303,10 +274,14 @@ footer {
 }
 
 .aBrillarGabyImg {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .aBrillarGabyImg img {
+  width: 80%;
+  height: 35%;
+  margin: 10px;
   object-fit: cover;
 }
 
@@ -315,67 +290,16 @@ footer {
   margin-top: 20px;
 }
 
-.grilla_serv h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  font-weight: 400;
-  margin-top: 10px;
-  padding: 5px;
-  text-shadow: #838df0 1px 0 10px;
-}
-
-.grupales {
-  margin-bottom: 20px;
-}
-.grupales .card {
-  background-color: #e9a281;
-  transition: 0.5s;
-}
-.grupales .card img {
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  padding: 5px;
-}
 .grupales .card:hover {
   background-color: #838df0;
   transform: scale(1.1);
 }
 
-.unoAuno {
-  margin-bottom: 20px;
-}
-.unoAuno .card {
-  background-color: #e9a281;
-  transition: 0.5s;
-}
-.unoAuno .card img {
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  padding: 5px;
-}
 .unoAuno .card:hover {
   background-color: #00964f;
   transform: scale(1.1);
 }
 
-.asesoria {
-  margin-bottom: 20px;
-}
-.asesoria .card {
-  background-color: #e9a281;
-  transition: 0.5s;
-}
-.asesoria .card img {
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  padding: 5px;
-  transition: 0.5s;
-}
 .asesoria .card:hover {
   background-color: #f57335;
   transform: scale(1.1);
@@ -390,23 +314,16 @@ footer {
   align-items: baseline;
 }
 
-.grilla_contacto h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  font-weight: 400;
-  padding: 5px;
-  text-shadow: #838df0 1px 0 10px;
-}
-
 .formulario {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: 0;
+  flex-flow: row wrap;
   font-size: 20px;
   font-weight: 400;
+  text-align: start;
   background-color: #838df0;
   padding: 20px;
   width: 100%;

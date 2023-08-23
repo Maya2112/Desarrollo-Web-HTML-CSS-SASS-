@@ -1,19 +1,5 @@
-.grilla_mepre{
-    h1{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 60px;
-        font-weight: 400;
-        padding:5px;
-        text-shadow: #838df0 1px 0 10px;
-    }
-} 
 .meUp{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap:10px;
+    @include flex(row, space-evenly, center, 10px);
     p{
         font-size: 20px;
         font-weight: 300;
@@ -23,9 +9,6 @@
     }
 }
 .meUpImg{
-    display: flex;
-    align-items: center;
-    gap:10px;
     img{
         height: 95%;
         width: 95%;
@@ -35,32 +18,16 @@
 }
 .meDownTitle{
     h2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 30px;
-        border: #838df0 5px solid;
+        border: $second-color 5px solid;
         font-size: 55px;
         font-weight: 400;
     }
 }
 .meDown{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap:10px;
-    p{
-        font-size: 20px;
-        font-weight: 300;
-        text-align: justify;
-        align-items: flex-end;
-    }
+    @extend .meUp;
 }
 .meDownImg{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap:10px;
     img{
         height: 100%;
         width: 95%;
@@ -68,15 +35,6 @@
     }
 }
 .carousel{
-    margin: 50px;
-    h2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-        border: #838df0 5px solid;
-        font-size: 55px;
-        font-weight: 400;
-    }
+    margin: 25px;
+    @extend .meDownTitle;
 }

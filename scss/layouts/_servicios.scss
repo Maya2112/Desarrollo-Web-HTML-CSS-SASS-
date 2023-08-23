@@ -1,64 +1,38 @@
-.grilla_serv{
-
-    h1{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 60px;
-        font-weight: 400;
-        margin-top: 10px;
-        padding:5px;
-        text-shadow: #838df0 1px 0 10px;
-    }
-}
 .grupales{
-    margin-bottom: 20px;
+    @extend .serv;
     .card{
-        background-color:  #e9a281;
-        transition: 0.5s;
+        @extend .serv-card;
         img{
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            padding: 5px;
+            @extend .serv-img;
         }
         &:hover{
-            background-color: #838df0;
+            background-color: $second-color;
             transform: scale(1.1);
         }
     }
 }
 .unoAuno{
-    margin-bottom: 20px;
+    @extend .serv;
     .card{
-        background-color:  #e9a281;
-        transition: 0.5s;
+        @extend .serv-card;
         img{
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            padding: 5px;
+            @extend .serv-img;
         }
         &:hover{
-            background-color: #00964f;
+            background-color: $deco-color;
             transform: scale(1.1);
         }
     }
 }
 .asesoria{
-    margin-bottom: 20px;
+    @extend .serv;
     .card{
-        background-color:  #e9a281;
-        transition: 0.5s;
+        @extend .serv-card;
         img{
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            padding: 5px;
-            transition: 0.5s;
+            @extend .serv-img;
             }
             &:hover{
-                background-color: #f57335; 
+                background-color: $comp-color; 
                 transform: scale(1.1);
         }
     }

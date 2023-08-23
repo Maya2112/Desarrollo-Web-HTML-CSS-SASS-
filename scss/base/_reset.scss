@@ -11,6 +11,18 @@
     margin: 0;
 }
 
+.container-fluid{
+    padding: 0;
+}
+
+
 main{
-    background-color: #ffd2ef
+    background-color: $primary-color;
+}
+
+h1{
+    padding: 15px;
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: #838df0 1px 0 10px;
 }

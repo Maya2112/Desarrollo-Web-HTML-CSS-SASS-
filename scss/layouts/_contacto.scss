@@ -1,54 +1,37 @@
-.grilla_contacto{ 
-    h1{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 60px;
-        font-weight: 400;
-        padding:5px;
-        text-shadow: #838df0 1px 0 10px;
+.formulario{
+    @include flex(row, space-evenly, center, 0);
+    flex-flow: row wrap;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+    background-color:$second-color;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    textarea{
+        resize: none;
     }
 }
-    .formulario{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: 20px;
+.redes{
+    @include flex(column, space-evenly, center, 10px);
+    margin-bottom: 15px;
+    h2{
+        padding: 10px;
+        color: $comp-color;
+        text-align: center;
+        font-size: 40px;
         font-weight: 400;
-        background-color: #838df0;
-        padding: 20px;
-        width: 100%;
-        margin-bottom: 15px;
-        textarea{
-            resize: none;
-        }
     }
-    .redes{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        gap:10px;
-        margin-bottom: 15px;
-        h2{
-            padding: 10px;
-            color: #f57335;
-            text-align: center;
-            font-size: 40px;
-            font-weight: 400;
-        }
-        .icono{
+    .icono{
+        width: auto;
+        height: 75px;
+        object-fit: cover;
+        transition: 0.5s;
+        &:hover{
             width: auto;
-            height: 75px;
-            object-fit: cover;
-            transition: 0.5s;
-            &:hover{
-                width: auto;
-                height: 90px;
-            }
+            height: 90px;
         }
     }
-    
+}
 
 

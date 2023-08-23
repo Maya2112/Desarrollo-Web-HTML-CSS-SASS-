@@ -10,7 +10,7 @@ nav{
         transition: 0.5s;
         
         &:hover{
-            box-shadow: 2px 2px 2px 2px #ffd2ef;
+            box-shadow: 2px 2px 2px 2px $primary-color;
             border-radius: 4px;
             font-size: 18px;
             color: white;

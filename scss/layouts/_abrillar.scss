@@ -1,24 +1,6 @@
-.grilla_abrillar{
-
-    h1{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 60px;
-        font-weight: 400;
-        margin-top: 10px;
-        padding:5px;
-        text-shadow: #838df0 1px 0 10px;
-    }
-}
 .aBrillarLeft{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:10px;
+    @include flex(column, center, center, 10px);
     h2{
-        text-align: left;
         font-size: 40px;
         font-weight: 300;
     }
@@ -29,24 +11,20 @@
     }
 }
 .aBrillarImg{
-    justify-content: center;
-    align-items: center;
     img{
+        width: 100%;
+        height: 95%;
         object-fit: cover; 
     }
 }
 .spotify{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap:10px;
+    @include flex(column, center, center, 10px);
     margin-top: 10px;
     h2{
         padding: 10px;
-        border:#00964f 5px solid;
+        border:$deco-color 5px solid;
         border-radius: 5px;
-        background-color: #dd7d50;
+        background-color: $comp-color;
         text-align: center;
         font-size: 35px;
         font-weight: 400;
@@ -59,51 +37,40 @@
     }
 }
 .aBrillarBottom{
-    display: flex;
-    align-items: center;
-    gap:10px;
-    justify-content: center;
+    @include flex(row, center, center, 10px);
     p{
         background-color: #959cd4;
-        border: #f57335 5px solid;
+        border: $comp-color 5px solid;
         font-size: 30px;
         font-weight: 400;
         text-align: center;
-        padding: 90px;
+        padding: 75px;
         a{
             font-weight: bold;
-            color: #00964f;
+            color: $deco-color;
             padding: 10px 14px;
             transition: 0.3s;
             &:hover{
                 text-decoration: none;
                 border-radius: 10px;
-                background-color: #00964f;
+                background-color: $deco-color;
                 color: white;
             }
         }
     }
 }
 .aBrillarGabyImg{
+    display: flex;
     justify-content: center;
     align-items: center;
     img{
+        width: 80%;
+        height: 35%;
+        margin: 10px;
         object-fit: cover;
     }
 } 
 .bg-abrillarB{
-    background-color: #838df0;
+    background-color: $second-color;
     margin-top: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
