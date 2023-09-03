@@ -1,35 +1,39 @@
-.formulario{
-    @include flex(row, space-evenly, center, 0);
-    flex-flow: row wrap;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: start;
-    background-color:$second-color;
-    padding: 20px;
+.contact{
     width: 100%;
-    margin-bottom: 15px;
-    textarea{
-        resize: none;
-    }
-}
-.redes{
-    @include flex(column, space-evenly, center, 10px);
-    margin-bottom: 15px;
-    h2{
-        padding: 10px;
-        color: $comp-color;
-        text-align: center;
-        font-size: 40px;
+    height: 100%;
+    .formulario{
+        @include flex(row, space-evenly, center, 0);
+        flex-flow: row wrap;
+        font-size: 20px;
         font-weight: 400;
+        text-align: start;
+        background-color:$second-color;
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 15px;
+        textarea{
+            resize: none;
+        }
     }
-    .icono{
-        width: auto;
-        height: 75px;
-        object-fit: cover;
-        transition: 0.5s;
-        &:hover{
+    .redes{
+        @include flex(column, space-evenly, center, 10px);
+        margin-bottom: 15px;
+        h2{
+            padding: 10px;
+            color: $comp-color;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+        }
+        .icono{
             width: auto;
-            height: 90px;
+            height: 75px;
+            object-fit: cover;
+            transition: 0.5s;
+            &:hover{
+                width: auto;
+                height: 90px;
+            }
         }
     }
 }
