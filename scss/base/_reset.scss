@@ -9,6 +9,7 @@
 
 .row{
     margin: 0;
+    padding: 0;
 }
 
 .container-fluid{
@@ -17,7 +18,7 @@
 
 
 main{
-    background-color: $primary-color;
+    background-image: linear-gradient($primary-color, $second-color);
 }
 
 h1{

@@ -1,76 +1,87 @@
-.aBrillarLeft{
-    @include flex(column, center, center, 10px);
+.aBrillarTop{
+    @include flex(row, space-around, center, 25px);
+    background-image: linear-gradient(to left, $primary-color, $second-color, $comp-color);
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.699);
+        opacity: 0.65;
+    }
     h2{
         font-size: 40px;
         font-weight: 300;
+        text-align: center;
     }
     p{
         font-size: 20px;
         font-weight: 300;
-        text-align:center;
-    }
-}
-.aBrillarImg{
-    img{
-        width: 100%;
-        height: 95%;
-        object-fit: cover; 
+        text-align: justify;
     }
 }
 .spotify{
-    @include flex(column, center, center, 10px);
-    margin-top: 10px;
+    @include flex(row, space-evenly, center, 0);
+    background-image: radial-gradient($primary-color, $comp-color, $second-color);
+    height: 100%;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 45px;
     h2{
-        padding: 10px;
-        border:$deco-color 5px solid;
-        border-radius: 5px;
-        background-color: $comp-color;
         text-align: center;
         font-size: 35px;
         font-weight: 400;
+        color: white;
+        text-shadow: whitesmoke 1px 0 10px;
     }
     iframe{
-        width: 268px;
-        height: 15%;
-        object-fit: cover;
+        width: 100%;
+        height: 100%;
         border-radius: 10px;
     }
 }
 .aBrillarBottom{
-    @include flex(row, center, center, 10px);
-    p{
-        background-color: #959cd4;
-        border: $comp-color 5px solid;
-        font-size: 30px;
-        font-weight: 400;
-        text-align: center;
-        padding: 75px;
-        a{
-            font-weight: bold;
-            color: $deco-color;
-            padding: 10px 14px;
-            transition: 0.3s;
-            &:hover{
-                text-decoration: none;
-                border-radius: 10px;
-                background-color: $deco-color;
-                color: white;
+    @include flex(row, center, center, 0);
+    background-image: linear-gradient($primary-color, $second-color);
+    border: $comp-color 5px solid;
+    width: 100%;
+    height: 100%;
+    .bottomText{
+        @include flex(column, center, center, 0);
+        background-color: rgba(255, 255, 255, 0.233);
+        width: 50%;
+        height: 100%;
+        p{
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+            color: #5106f3bd;
+            padding: 40px;
+            text-shadow: $second-color 15px 15px 15px;
+            a{
+                font-weight: bold;
+                color: $comp-color;
+                padding: 10px 14px;
+                text-shadow: $second-color 1px 5px 10px;
+                transition: 0.3s;
+                &:hover{
+                    text-decoration: none;
+                    border-radius: 10px;
+                    background-color: $deco-color;
+                    text-shadow: none;
+                    color: white;
+                }
             }
         }
     }
-}
-.aBrillarGabyImg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     img{
-        width: 80%;
-        height: 35%;
-        margin: 10px;
+        width: 75%;
+        height: 25%;
+        box-shadow: 3px 3px 3px 3px rgba(61, 60, 60, 0.452);
+        border-radius: 20px;
         object-fit: cover;
     }
-} 
-.bg-abrillarB{
-    background-color: $second-color;
-    margin-top: 20px;
 }

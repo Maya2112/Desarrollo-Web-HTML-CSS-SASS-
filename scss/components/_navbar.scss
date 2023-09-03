@@ -5,12 +5,11 @@ nav{
 
     .navText {
         text-decoration: none;
-        margin: 5px;
         color: black;
         transition: 0.5s;
         
         &:hover{
-            box-shadow: 2px 2px 2px 2px $primary-color;
+            box-shadow: 2px 2px 2px 2px $second-color;
             border-radius: 4px;
             font-size: 18px;
             color: white;

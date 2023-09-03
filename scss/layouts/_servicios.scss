@@ -6,7 +6,8 @@
             @extend .serv-img;
         }
         &:hover{
-            background-color: $second-color;
+            background-image: linear-gradient($second-color 60%, $primary-color);
+            box-shadow: none;
             transform: scale(1.1);
         }
     }
@@ -19,7 +20,8 @@
             @extend .serv-img;
         }
         &:hover{
-            background-color: $deco-color;
+            background-image: linear-gradient($deco-color 60%, $primary-color);
+            box-shadow: none;
             transform: scale(1.1);
         }
     }
@@ -32,7 +34,8 @@
             @extend .serv-img;
             }
             &:hover{
-                background-color: $comp-color; 
+                background-image: linear-gradient($comp-color 60%, $primary-color);
+                box-shadow: none;
                 transform: scale(1.1);
         }
     }

@@ -1,40 +1,75 @@
 .meUp{
-    @include flex(row, space-evenly, center, 10px);
-    p{
-        font-size: 20px;
-        font-weight: 300;
-        text-align: justify;
-        padding: 15px;
-        align-items: center;
-    }
-}
-.meUpImg{
-    img{
-        height: 95%;
-        width: 95%;
-        object-fit: cover;
-        border-radius: 15px;
+    @include flex(row, center, center, 10px);
+    min-height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    background: linear-gradient(#ffd2ef57, #838ef06c), url('../images/GabyShadow.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin-bottom: 20px;
+    .meUpText{
+        @include flex(column, center, center, 10px);
+        height: 100%;
+        width: 100%;
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            text-align: justify;
+            color: black;
+            padding: 15px;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: 400;
+            text-align: left;
+            color: whitesmoke;
+            text-shadow: $second-color 1px 0 10px;
+        }
     }
 }
 .meDownTitle{
     h2{
-        padding: 30px;
+        padding: 15px;
         border: $second-color 5px solid;
         font-size: 55px;
         font-weight: 400;
     }
 }
 .meDown{
-    @extend .meUp;
-}
-.meDownImg{
-    img{
+    @include flex(row, space-evenly, center, 0);
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    .meDownText{
+        @include flex(column, center, center, 10px);
         height: 100%;
-        width: 95%;
+        width: 100%;
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            text-align: justify;
+            padding: 15px;
+        }
+    }
+    img{
+        height: 75%;
+        width: 100%;
         object-fit: cover;
+        border-radius: 15px;
     }
 }
-.carousel{
-    margin: 25px;
-    @extend .meDownTitle;
+.Gallery{
+    @include flex(row, space-evenly, center, 0);
+    width: 100%;
+    height: 100%;
+    h2{
+        padding: 15px;
+        border: $third-color 5px solid;
+        font-size: 55px;
+        font-weight: 400;
+    }
+    img{
+        height:75%;
+        width: 100%;
+        object-fit: cover;
+    }
 }

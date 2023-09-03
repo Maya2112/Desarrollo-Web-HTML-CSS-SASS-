@@ -1,21 +1,17 @@
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    background-color:$comp-color;
+    @include flex(row-reverse, space-between, center, 0);
+    background-image: linear-gradient($second-color, $primary-color);
     padding: 7px;
     position: relative;
-
     img{
         width: 60px;
         height: 60px;
+        border: 2px solid $second-color;
         border-radius: 100%;
         object-fit: cover;
         transition: 0.5s;
         position: absolute;
         top: 10%;
-
         &:hover{
             width: 66px;
             height: 66px;
